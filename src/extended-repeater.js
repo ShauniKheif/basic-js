@@ -8,6 +8,9 @@ module.exports = function repeater(str, options) {
   if (!options.addition) {
     options.addition = '';
   }
+  if (!options.repeatTimes) {
+    options.repeatTimes = 1;
+  }
   for(let i = 0; i < options.repeatTimes - 1; i++ ) {
     result.push(str);
     result.push(options.addition);
